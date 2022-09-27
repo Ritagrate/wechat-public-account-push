@@ -7,12 +7,12 @@ const USER_CONFIG = {
   // 公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: '',
+  APP_ID: 'wx1d0b64c87f25e1f4',
 
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: '',
+  APP_SECRET: '3da9990eea2f13a39be3e284d5bc6097',
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
@@ -60,7 +60,7 @@ const USER_CONFIG = {
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
    */
-  USERS: [
+  USERS: [oXT9R5wFjVxGeptPAPdytS-PBHb8
     {
       // 想要发送的人的名字
       name: '小左',
@@ -218,15 +218,15 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  XzvG9o91YvMARoV4Zj97TSrsPRmdILJWW6bjw2HPyKo: '',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
+  CALLBACK_USERS: [gh_d60850cb95eb
     {
       // 一般都填自己
-      name: '自己',
+      name: '小左',
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'gh_d60850cb95eb',
     }
     // 你可以不断按格式往下增加
     // ...
@@ -239,9 +239,9 @@ const USER_CONFIG = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: '广东',
+  PROVINCE: '四川',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: '惠州',
+  CITY: '宜宾',
 
   /** 重要节日相关 */
 
