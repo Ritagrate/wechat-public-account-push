@@ -29,7 +29,7 @@ const USER_CONFIG = {
 
     /** 每日N句 */
     // 金山每日一句
-    CIBA: true,
+    CIBA: false,
     // 每日一言
     oneTalk: false,
     // 土味情话(彩虹屁)
@@ -39,23 +39,23 @@ const USER_CONFIG = {
     // 毒鸡汤
     poisonChickenSoup: false,
     // 古诗古文
-    poetry: false,
+    poetry: true,
 
     /** 星座运势 */
-    horoscope: false,
+    horoscope: true,
 
     /** 生日消息和节日消息 */
     birthdayMessage: true,
 
     // 学生课表
-    courseSchedule: false,
+    courseSchedule: true,
   },
 
   /** 每日一言 */
 
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: '',
+  LITERARY_PREFERENCE: 'LITERARY_PREFERENCE',
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
@@ -63,17 +63,17 @@ const USER_CONFIG = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: '老婆0',
+      name: '小左',
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'wx1d0b64c87f25e1f4',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: '',
+      useTemplateId: 'oXT9R5wFjVxGeptPAPdytS-PBHb8',
       // 所在省份
-      province: '广东',
+      province: '四川',
       // 所在城市
-      city: '肇庆',
+      city: '宜宾',
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '1-11',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
@@ -82,27 +82,27 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '老婆', year: '1996', date: '09-09',
+          type: '*生日', name: '小左', year: '2003', date: '03-11',
         },
         {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
+          type: '节日', name: '第一次见面', year: '2021', date: '09-19',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
+          type: '生日', name: '小左 ', year: '2002', date: '12-29',
         },
         {
-          type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+          type: '节日', name: '第一次认识', year: '2021', date: '06-21',
         }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
-        // 退伍日
-        { keyword: 'ex_day', date: '2022-09-10' }
+        // 认识的日子
+        { keyword: 'love_day', date: '2021-06-21' },
+        // 第一次见面
+        { keyword: 'marry_day', date: '2021-09-19' },
+        // 对你心动
+        { keyword: 'ex_day', date: '2022-03-20' }
       ],
       // 课程表相关配置
       // 如果courseSchedule不存在或者为空（null）则认为没有课程
@@ -123,38 +123,38 @@ const USER_CONFIG = {
           odd: [
             // 例子，周一的课表
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '08:30-10:05 休息',
+              '10:25-11:10 影视写作基础'
             ],
             // 周二
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '08:30-10:05 休息',
+              '09:50-11:25 思修'
             ],
             // 周三
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '08:30-10:05 休息',
+              '09:50-11:25 计算机'
             ],
             // 周四
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '08:30-10:05 摄影',
+              '09:50-11:25 影视写作基础'
             ],
             // 周五
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '08:30-10:05 摄影',
+              '09:50-11:25 摄影'
             ],
             // 周六
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '08:30-10:05 西方电影史',
+              '09:50-11:25 艺术概论'
             ],
             // 周日
             [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
+              '08:30-10:05 体育',
+              '09:50-11:25 体育'
             ]
           ],
           // 双周课表
@@ -171,39 +171,39 @@ const USER_CONFIG = {
       },
     },
     {
-      name: '老婆1',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: '小左1',
+      id: 'wx1d0b64c87f25e1f4',
+      useTemplateId: 'oXT9R5wFjVxGeptPAPdytS-PBHb8',
+      province: '四川',
+      city: '宜宾',
+      第一次认识: '2021-06-21',
+      心动时间: '2022-3-20': '',
       openUrl: 'https://wangxinleo.cn',
       festivals: [],
       customizedDateList: [],
       courseSchedule: null
     },
     {
-      name: '老婆2',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: '小左2',
+      id: 'wx1d0b64c87f25e1f4',
+      useTemplateId: 'oXT9R5wFjVxGeptPAPdytS-PBHb8',
+      province: '四川',
+      city: '宜宾',
+      第一次认识: '2021-06-21,
+      心动时间: '2022-3-20': '',
       openUrl: 'https://wangxinleo.cn',
       festivals: [],
       customizedDateList: [],
       courseSchedule: null
     },
     {
-      name: '老婆3',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: '小左3',
+      id: 'wx1d0b64c87f25e1f4',
+      useTemplateId: 'oXT9R5wFjVxGeptPAPdytS-PBHb8',
+      province: '四川',
+      city: '宜宾',
+      第一次认识: '2021-06-21',
+      心动时间: '2022-3-20',
       openUrl: 'https://wangxinleo.cn',
       festivals: [],
       customizedDateList: [],
@@ -318,10 +318,10 @@ const USER_CONFIG = {
     {
       keyword: 'lover_prattle',
       contents: [
-        '因为太喜欢你，所以看谁都像是情敌。',
-        '申请成为你爱里的永久居民。',
-        '你很傻，你很笨，可我还是很羡慕你，因为你有我',
-        '遇见你，就好像捡到了100斤的运气'
+        '天天开心哦。',
+        '要天天开心哦。',
+        '不许不开心',
+        '不许忘记我'
       ],
     }
     // 你可以不断按格式往下增加
